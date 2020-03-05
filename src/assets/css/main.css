@@ -4,3 +4,8 @@
 @import "./theme-pink.css";
 
 @tailwind utilities;
+
+
+a {
+    @apply text-red-600;
+}
