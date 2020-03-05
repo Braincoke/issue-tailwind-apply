@@ -15,6 +15,11 @@
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
 
+    <div class="bg-gray-400 mt-5 py-10 px-4 rounded text-green-800">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem dolor perspiciatis officia? Obcaecati quae harum asperiores,
+        praesentium quasi alias qui.</p>
+    </div>
   </Layout>
 </template>
 
