@@ -20,6 +20,11 @@
         Rem dolor perspiciatis officia? Obcaecati quae harum asperiores,
         praesentium quasi alias qui.</p>
     </div>
+    <div class="text-yellow-700">
+      This text is yellow.
+      <a href="#">This is a link</a>
+    </div>
+    <a href="#" class="text-purple-700">This link should be purple</a>
   </Layout>
 </template>
 
