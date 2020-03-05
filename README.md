@@ -1,14 +1,45 @@
-# Default starter for Gridsome
+# CSS issue with the tag <a>
 
-This is the project you get when you run `gridsome create new-project`.
+This project is a minimal reproduction code for a specific CSS issue.
 
-### 1. Install Gridsome CLI tool if you don't have
+The starter is created with Gridsome and TailwindCSS.
 
-`npm install --global @gridsome/cli`
+## Files used in the project
 
-### 2. Create a Gridsome project
+### main.css
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+The file `/src/assets/css/main.css` contains the Tailwind directives and imports another css file:
+
+```css
+@tailwind base;
+@tailwind components;
+
+@import "./theme-pink.css";
+
+@tailwind utilities;
+```
+
+### theme-pink.css
+
+This file applies some Tailwind utilities to demonstrate the issue:
+
+```css
+// This one is correctly applied
+div {
+    @apply bg-pink-200;
+}
+
+// This one is not
+a {
+    @apply text-red-600;
+}
+
+// This one is correctly applied
+a:hover {
+    @apply text-blue-500;
+}
+```
+
+## Issue
+
+Every css in theme-pink.css is applied but the one with `a { @apply text-red-600; }`.
