@@ -64,3 +64,5 @@ a {
     @apply text-red-600;
 }
 ```
+
+You can test this in the branch `workaround`.
