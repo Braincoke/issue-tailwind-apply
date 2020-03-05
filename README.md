@@ -1,4 +1,4 @@
-# CSS issue with the tag <a>
+# CSS issue with the tag `<a>`
 
 This project is a minimal reproduction code for a specific CSS issue.
 
