@@ -1,0 +1,11 @@
+div {
+    @apply bg-pink-200;
+}
+
+a {
+    @apply text-red-600;
+}
+
+a:hover {
+    @apply text-blue-500;
+}
